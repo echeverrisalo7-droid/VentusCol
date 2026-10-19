@@ -1,4 +1,3 @@
-
 :root{
   --verde:      #5E6A4A;
   --blanco:     #FFFFFF;
@@ -491,3 +490,4 @@ text-align:center; font-family: var(--font-display); font-style:normal; font: we
   transition: background .3s, color .3s, transform .3s;
 }
 .lightbox__close:hover{ background: var(--terracota); color: var(--blanco); transform: rotate(90deg); }
+
