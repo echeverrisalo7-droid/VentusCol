@@ -172,6 +172,28 @@ h1,h2,p{ margin:0; }
 .hero .btn{ margin-top: 1.8rem; animation: subir .9s var(--ease) .24s both; }
 @keyframes subir{ from{ opacity:0; transform: translateY(18px);} to{ opacity:1; transform:translateY(0);} }
 
+/* ============ CÓMO TRABAJAMOS ============ */
+.proceso{ padding: clamp(3.4rem,7vw,3rem) 1.5rem; background: var(--fondo-1); }
+.proceso h2{
+  text-align:center; font-family: var(--font-display); font-weight:500;
+  font-size: 2.4rem; color: var(--contraste); margin-bottom: 2.4rem;
+}
+.proceso__pasos{
+  list-style:none; margin:0 auto; padding:0; max-width:1080px;
+  display:grid; grid-template-columns: repeat(4,1fr); gap: 1.6rem;
+}
+.paso{ text-align:center; }
+.paso__num{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:44px; height:44px; border-radius:50%;
+  background: var(--verde); color: var(--blanco);
+  font-family: var(--font-display); font-size:1.2rem; font-weight:700;
+}
+.paso h3{ margin:.9rem 0 .4rem; font-family: var(--font-display); font-weight:500; font-size:1.2rem; color: var(--contraste); }
+.paso p{ margin:0 auto; max-width:24ch; font-size:.9rem; line-height:1.55; color: var(--texto-suave); }
+@media (max-width: 760px){ .proceso__pasos{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 480px){ .proceso__pasos{ grid-template-columns: 1fr; } }
+
 /* ============ LÍNEAS DE PRODUCTO ============ */
 .linea{ display:grid; grid-template-columns: 1fr 1fr; min-height: 78vh; background: var(--fondo-1); }
 .linea:nth-of-type(even){ background: var(--fondo-2); }
@@ -223,18 +245,7 @@ h1,h2,p{ margin:0; }
   .exp--alta{ grid-row: span 2; }
 }
 
-/* ============ CIFRAS ============ */
-.stats{
-  background: var(--fondo-2);
-  border-top: 1px solid var(--linea-sutil);
-  border-bottom: 1px solid var(--linea-sutil);
-  padding: clamp(2.2rem,5vw,3.2rem) 1.5rem;
-  display:grid; grid-template-columns: repeat(4,1fr); gap: 1.4rem 1rem;
-  max-width: 100%; margin: 0 auto;
-}
-.stat__num{ font-family: var(--font-display); font-weight:400; font-size: clamp(1.9rem,4vw,2.7rem); color: var(--contraste); line-height:1; }
-.stat__label{ margin-top:.45rem; font-weight:600; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color: var(--terracota); }
-@media (max-width: 760px){ .stats{ grid-template-columns: repeat(2,1fr); } }
+
 
 /* ============ POR QUÉ VENTUS ============ */
 .porque{
